@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,41 +8,52 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <style>
-        .navbar-custom{
+        .navbar-custom {
             background-color: #046477;
         }
-        .navbar-custom .navbar-brand{
+
+        .navbar-custom .navbar-brand {
             color: #ffffff;
         }
-        .navbar-custom .navbar-text{
+
+        .navbar-custom .navbar-text {
             color: #ffffff;
             font-size: 1em;
             padding-right: 15px;
+            text-align: left;
+        }
+
+        .footer {
+            background-color: #e8ded9;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: #b8b0ac;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">SLaw</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="navbar-text" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-text" asp-area="" asp-page="/Reports">Reports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-text" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom border-bottom mb-3 box-shadow">
+            <a class="navbar-brand" asp-area="" asp-page="/Index" style="padding-right: 5px;">
+            <img src="Images\logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Oregon District Attorney</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="navbar-text" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-text" asp-area="" asp-page="/Reports">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-text" asp-area="" asp-page="/Privacy">Privacy</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -51,9 +63,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted fixed-bottom">
         <div class="container">
-            &copy; 2021 - SLaw - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2021 - Oregon District Attorney - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
@@ -63,4 +75,5 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
