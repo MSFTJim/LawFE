@@ -61,6 +61,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-family: 'Times New Roman', serif;
 }
 .footer {
   position: absolute;
@@ -69,6 +70,10 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-
+span.nobreak {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 /*
 -----------------------------------------------------*/

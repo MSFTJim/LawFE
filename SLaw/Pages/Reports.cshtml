@@ -1,10 +1,45 @@
 ﻿@page
 @model ReportsModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Reports page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+    <body style="text-align: center">
+        <div class="card">
+            <div class="card-header" style="text-align: center; font-size: 24px">
+                Available Report Downloads
+            </div>
+            <div class="card-body">
+                <b>Expenses</b>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Download
+                    </label>
+                </div>
+                <b>Workers</b>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Download
+                    </label>
+                </div>
+                <b>Taxes</b>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Download
+                    </label>
+                </div>
+                <b>Budget</b>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Download
+                    </label>
+                </div>
+            </div>
+        </div>
+    </body>
+</head>
